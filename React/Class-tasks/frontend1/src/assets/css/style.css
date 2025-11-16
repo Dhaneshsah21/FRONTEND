@@ -1,0 +1,108 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.Nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    color: white;
+    padding: 15px 25px;
+}
+
+.logo h3 {
+    font-size: 22px;
+    letter-spacing: 1px;
+}
+
+.links a {
+    padding: 15px;
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+}
+
+.links a:hover {
+    color: rgb(255, 208, 0);
+}
+
+.itcompany,
+.robotics,
+.festivals,
+.tourism,
+.place,
+.cinemas,
+.lovemovies,
+.actionmovie,
+.mostwatch,
+.traditional {
+    margin: 50px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 10px rgba(0,0,0,0.15);
+}
+
+
+.itcompany h1,
+.robotics h2,
+.festivals h2,
+.tourism h2,
+.place h2,
+.cinemas h2,
+.lovemovies h2,
+.actionmovie h2,
+.mostwatch h2,
+.traditional h2 {
+    padding: 10px 0;
+    color: #222;
+    border-left: 5px solid gold;
+    padding-left: 12px;
+}
+
+
+p {
+    padding: 20px 0;
+    text-align: justify;
+    line-height: 1.6;
+    color: #444;
+}
+
+ul {
+    padding-left: 35px;
+}
+
+ul li {
+    margin-bottom: 8px;
+    font-size: 16px;
+}
+
+ul li:hover {
+    color: rgb(255, 187, 0);
+    cursor: pointer;
+}
+
+
+.chennai {
+    background-color: beige;
+}
+
+
+.kerala {
+    background-color: rgba(30, 102, 30, 0.65);
+}
+
+
+.karnataka {
+    background-color: rgba(67, 25, 107, 0.35);
+}
+
+section {
+    margin: 50px;
+}
