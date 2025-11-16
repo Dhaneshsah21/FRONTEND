@@ -1,0 +1,42 @@
+1. Why we use React?
+    
+React is a powerful JavaScript library used to build fast and interactive user interfaces, especially for single-page applications. It follows a component-based architecture, allowing developers to create reusable UI parts that make code easier to manage. React uses a Virtual DOM to efficiently update only the parts of a webpage that change, improving performance. With its declarative syntax, developers can describe what the UI should look like, and React handles the rendering automatically. Backed by Meta (Facebook) and a strong community, React offers great flexibility, reusability, and performance, making it one of the most popular choices for modern web development.
+
+2. what is the difference between html using in webpage and react using webpage ?
+
+Feature         HTML Webpage	           React Webpage
+Structure      Static pages	            Dynamic components
+Reloads	       Page reloads on navigation   No reload (SPA)
+DOM	       Real DOM	                    Virtual DOM
+Speed	       Slower updates	            Faster updates
+Reusability    Limited	                    High (components)
+User Experience	Basic	                    Smooth and app-like 
+
+3. what is difference between react and angular ?
+
+React	                                     Angular
+Library (only for UI)	                     Full framework (complete structure)
+Uses JavaScript	                             Uses TypeScript
+Easier to learn	                             Little harder to learn
+Needs extra libraries for routing or state.  Has everything built-in
+Faster with Virtual DOM	                     Bigger but more powerful.
+
+4. Why We Use Node.js in Web Development?
+
+We use Node.js because it lets us build the backend of websites using JavaScript — the same language used for the frontend. It is fast, can handle many users at once, and is great for real-time apps like chat or live updates. Node also has many ready-made packages that make coding easier and quicker.
+
+5. which is faster react or angular ? and why the reason 
+
+React is generally faster than Angular.
+
+why because:
+
+React uses a Virtual DOM, , which updates only the parts of the page that change it make faster 
+lightweight library, React is just a UI library(full framework).
+Flexible Performance, optimize and load components only we needed.
+
+6. what is babel compiler?
+
+Babel is a JavaScript compiler that helps your code run on all browsers.
+
+It takes modern JavaScript (ES6 and above) or JSX (used in React) and converts it into older JavaScript that browsers can understand.

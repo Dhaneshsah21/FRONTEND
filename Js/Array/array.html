@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+</head>
+<body>
+    <h1>This is Array</h1>
+    
+    <script>
+        var num= [2,4,6,8,10,12,14]
+        console.log(num)
+
+        for(let i=0;i < num.length;i++){
+            console.log(i);
+            if (i%2===0){
+                console.log('Even number based on i value',i)
+            }
+        }
+
+        let numbers = [11, 22, 33, 44, 55];
+
+        for (let i = 0; i < numbers.length; i++) {
+            console.log("Element at index", i, "=" , numbers[i]);
+        }
+
+        for (let i = 1; i <= 5; i++) {
+            for (let j = 1; j <= 5; j++) {
+                 console.log('i loop',i,'j loop', j);
+            }
+        }
+    </script>
+</body>
+</html>

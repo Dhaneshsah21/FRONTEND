@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>donate</title>
+    <link rel="stylesheet" href="../assets/donate.css">
+</head>
+
+<body>
+    <div class="form">
+        <form action="../assets/submit.html" method="get">
+            <img src="../assets/donate.png" alt="donate image" width="300">
+            <br><br>
+            <label>Name:</label>
+            <input type="text" placeholder="Enter Your Name" required>
+            <br><br>
+            <label>Mobile:</label>
+            <input type="number" placeholder="+91-9876543210" required>
+            <br><br>
+            <label>Email:</label>
+            <input type="email" placeholder="Enter ur Email with @email.com" required>
+            <br><br>
+            <label>Address:</label>
+            <textarea name="Address" id="address" rows="4" cols="25"></textarea>
+            <br><br>
+            <label>Donation Amount(₹):</label>
+            <input type="number" required>
+            <br><br>
+            <label>Donation Payment Method:</label>
+            <input type="radio" name="Donation Payment Method" value="debit/credit card">Debit/Credit card
+            <input type="radio" name="Donation Payment Method" value="UPI">UPI payment
+            <br><br>
+            <textarea name="account detail" id="account detail" rows="4" cols="35" readonly>
+    Name:DHANESH FOUNDATION
+    Bank Name:HDFC BANK 
+    acc/no: 8888-6666-4444-2222 
+    IFSC: HDFC000021
+            </textarea>
+            <br><br>
+            <label>Upload Your Transaction Details</label>
+            <input type="file" name="Transaction" id="Transaction" required>
+            <br><br>
+            <label>Give Some Feedback To Us:</label><br>
+            <textarea name="Feedback" id="Feedback" rows="2" cols="35" placeholder="Supportive Words"></textarea>
+            <br><br>
+            <button type="reset">Reset</button>
+            <br><br>
+            <button type="submit">Donate Submit</button>
+
+        </form>
+    </body>
+
+</html>

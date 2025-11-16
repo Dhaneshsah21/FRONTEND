@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>array-methods</title>
+</head>
+<body>
+    <h1>Array-methods</h1>
+    <script>
+        let arr = [ 1,2,6,8,"name",66,143,500,true]
+        
+        arr.push("address",55)
+        console.log(arr)
+
+        arr.pop()
+        console.log(arr)
+
+        arr.shift()
+        console.log(arr)
+
+        arr.unshift("new")
+        console.log(arr)
+
+        let arr1= [1,2,3,4,5]
+        
+        const arr2= arr.concat(arr1)
+        console.log(arr2)
+        
+        const arr3=arr.join(arr1)
+        console.log(arr3)
+
+        arr4 = [1,2,3,4,5]
+        arr4.reverse()
+        console.log(arr4)
+
+        const arr5 = arr1.slice(1,4)
+        console.log(arr5)
+
+        const arr6 = arr1.splice(1,2,3)
+        console.log(arr6)
+
+        console.log(arr.includes("address"))
+        const arr7 = arr.includes("name")
+        console.log(arr7)
+
+        const num = arr.indexOf(500)
+        const num1 = arr.indexOf("name")
+        console.log(num)
+        console.log(num1)
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>De_structuring </title>
+  <style>
+    body {
+      text-align: center;
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      padding: 20px;
+    }
+
+    #heading {
+      background-color: #333;
+      color: white;
+      padding: 5px;
+    }
+
+    #info {
+      text-align: justify;
+      font-size: 18px;
+      background: white;
+      padding: 15px;
+      border-radius: 10px;
+      width: 60%;
+      margin: 20px auto;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+  </style>
+</head>
+
+<body>
+  <div id="heading">
+    <h2>Student Details</h2>
+  </div>
+
+  <div id="info"></div>
+
+  <script>
+    const student = {
+      name: "Arun Kumar",
+      age: 21,
+      course: "BCA",
+      city: "Chennai"
+    };
+
+    const { name, age, course, city } = student;
+
+    document.getElementById("info").innerHTML = `
+      <p><b>Name:</b> ${name}</p>
+      <p><b>Age:</b> ${age}</p>
+      <p><b>Course:</b> ${course}</p>
+      <p><b>City:</b> ${city}</p>
+    `;
+  </script>
+</body>
+
+</html>

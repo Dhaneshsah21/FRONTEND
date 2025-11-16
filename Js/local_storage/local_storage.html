@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form</title>
+  <style>
+    body {
+      font-family: "Poppins", sans-serif;
+      background: linear-gradient(135deg, #74ebd5, #9face6);
+      margin: 0;
+      padding: 0;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    h2 {
+      text-align: center;
+      margin-top: 40px;
+      color: #fff;
+      font-size: 2rem;
+      letter-spacing: 1px;
+    }
+
+    
+    form {
+      background: #ffffff;
+      padding: 25px 30px;
+      border-radius: 15px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+      max-width: 450px;
+      width: 90%;
+      margin-top: 20px;
+      transition: all 0.3s ease;
+    }
+
+    form:hover {
+      transform: scale(1.02);
+      box-shadow: 0 12px 25px rgba(0,0,0,0.3);
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      border: 2px solid #ccc;
+      border-radius: 8px;
+      outline: none;
+      font-size: 14px;
+      transition: border-color 0.3s;
+      background: #f9f9f9;
+    }
+
+    input:focus, textarea:focus {
+      border-color: #6c63ff;
+      background: #fff;
+    }
+
+    textarea {
+      resize: none;
+      height: 100px;
+    }
+
+    input[type="submit"] {
+      background: linear-gradient(135deg, #6c63ff, #48c6ef);
+      color: #fff;
+      font-weight: bold;
+      font-size: 15px;
+      letter-spacing: 0.5px;
+      cursor: pointer;
+      border: none;
+      transition: 0.3s;
+    }
+
+    input[type="submit"]:hover {
+      background: linear-gradient(135deg, #48c6ef, #6c63ff);
+      transform: translateY(-2px);
+      box-shadow: 0 5px 15px rgba(108,99,255,0.4);
+    }
+
+    #result {
+      text-align: center;
+      font-weight: bold;
+      margin-top: 10px;
+      font-size: 15px;
+    }
+
+
+    table {
+      width: 90%;
+      margin: 40px auto;
+      border-collapse: collapse;
+      background: #fff;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+    }
+
+    th, td {
+      padding: 12px;
+      text-align: center;
+      border-bottom: 1px solid #eee;
+      font-size: 14px;
+    }
+
+    th {
+      background: linear-gradient(135deg, #6c63ff, #48c6ef);
+      color: white;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    tr:hover {
+      background-color: #f1f5ff;
+    }
+
+    @media (max-width: 600px) {
+      form {
+        padding: 20px;
+      }
+      table {
+        font-size: 12px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Form</h2>
+
+  <form id="reviewForm">
+    <input type="text" id="name" placeholder="Enter your name">
+    <input type="email" id="email" placeholder="Enter your email">
+    <input type="text" id="problem" placeholder="Enter your problem">
+    <input type="text" id="area" placeholder="Enter your area">
+    <textarea id="review" placeholder="Write your review here..."></textarea>
+    <input type="submit" value="Submit Review">
+    <p id="result"></p>
+  </form>
+
+  <table id="dataTable">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Problem</th>
+        <th>Area</th>
+        <th>Review</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+
+  <script>
+    const form = document.getElementById("reviewForm");
+    const result = document.getElementById("result");
+    const tableBody = document.querySelector("#dataTable tbody");
+
+    form.addEventListener("submit", (e) => {
+      e.preventDefault();
+
+      const name = document.getElementById("name").value.trim();
+      const email = document.getElementById("email").value.trim();
+      const problem = document.getElementById("problem").value.trim();
+      const area = document.getElementById("area").value.trim();
+      const review = document.getElementById("review").value.trim();
+
+      if (!name || !email || !problem || !area || !review) {
+        result.textContent = "Please fill all fields!";
+        result.style.color = "red";
+        return;
+      }
+
+      const newRow = document.createElement("tr");
+      newRow.innerHTML = `
+        <td>${name}</td>
+        <td>${email}</td>
+        <td>${problem}</td>
+        <td>${area}</td>
+        <td>${review}</td>
+      `;
+      tableBody.appendChild(newRow);
+
+      result.textContent = "Review submitted successfully!";
+      result.style.color = "green";
+
+      form.reset();
+    });
+  </script>
+
+</body>
+</html>

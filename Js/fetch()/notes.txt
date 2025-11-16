@@ -1,0 +1,19 @@
+1. Async / Await
+What it is:
+async and await are used in JavaScript to handle asynchronous operations in a cleaner and more readable way than .then() and .catch().
+
+Why we use:
+Because using too many .then() chains (Promise chaining) makes code hard to read → async/await makes it simple and readable.
+ 
+2. node.js
+
+What it is:
+Node.js is a JavaScript runtime built on Chrome’s V8 engine that allows you to run JS code outside the browser (for backend use).
+
+Why we use:
+To create servers, connect to databases, and run backend logic using JavaScript.
+
+3.What is fetch()?
+
+fetch() is a built-in JavaScript function used to make HTTP requests to a server or API and get data (usually JSON).
+It returns a Promise.

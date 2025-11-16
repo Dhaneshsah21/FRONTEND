@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cafe_order_button</title>
+</head>
+<body>
+    <div id="Espresso_box">
+        <button id="btn_1">order Espresso </button>
+        <p id="Espresso_content"></p>
+        <img src="" id="img1" alt="">
+    </div>
+    <div id="Cappuccino_box">
+        <button id="btn_2">order Cappuccino </button>
+        <p id="Cappuccino_content"></p>
+        <img src="" id="img2" alt="">
+    </div>
+    <div id="Coffee_box">
+        <button id="btn_3">order Coffee </button>
+        <p id="Coffee_content"></p>
+        <img src="" id="img3" alt="" >
+    </div>
+    <div id="Sandwich_box">
+        <button id="btn_4">order Sandwich </button>
+        <p id="Sandwich_content"></p>
+        <img src="" id="img4" alt="">
+    </div>
+    <script>
+        const btn01 = document.getElementById("btn_1")
+        const show1 = document.getElementById("Espresso_content") 
+        const box_1 = document.getElementById("Espresso_box")
+        const imgs1 = document.getElementById("img1")
+
+        btn01.addEventListener("click", () => {
+        btn01.style.display = "none";
+      show1.innerHTML = "<b>This is Espresso</b>";
+      box_1.style.textAlign = "center";
+      box_1.style.backgroundColor = "black";
+      imgs1.src="assets/espresso.jpg";
+      alert("Successfully updated Espresso content!");
+    });
+
+
+        const btn02= document.getElementById("btn_2")
+        const show2 = document.getElementById("Cappuccino_content") 
+        const box_2 = document.getElementById("Cappuccino_box")
+        const imgs2 = document.getElementById("img2")
+
+        btn02.addEventListener("click", () => {
+        btn02.style.display = "none";
+      show2.innerHTML = "<b>This is cappuccino</b>";
+      box_2.style.textAlign = "center";
+      box_2.style.backgroundColor = "black";
+      imgs2.src="assets/cappuccino.jpg";
+      alert("Successfully updated cappuccino content!");
+    });
+
+        const btn03= document.getElementById("btn_3")
+        const show3 = document.getElementById("Coffee_content") 
+        const box_3 = document.getElementById("Coffee_box")
+        const imgs3 = document.getElementById("img3")
+
+        btn03.addEventListener("click", () => {
+        btn03.style.display = "none";
+      show3.innerHTML = "<b>This is Cold Coffee</b>";
+      box_3.style.textAlign = "center";
+      box_3.style.backgroundColor = "black";
+      imgs3.src="assets/cold coffee.jpg";
+      alert("Successfully updated cold Coffee content!");
+    });
+
+    const btn04 = document.getElementById("btn_4");
+    const show4 = document.getElementById("Sandwich_content");
+    const box_4 = document.getElementById("Sandwich_box");
+    const imgs4 = document.getElementById("img4");
+
+    btn04.addEventListener("click", () => {
+      
+      btn04.style.display = "none";
+      show4.innerHTML = "<b>This is Sandwich</b>";
+      box_4.style.textAlign = "center";
+      box_4.style.backgroundColor = "black";
+      box_4.style.color = "white"; 
+      imgs4.src = "assets/sandwich.jpg";
+      alert("Successfully updated Sandwich content!");
+    });
+        
+
+
+
+    </script>
+</body>
+</html>

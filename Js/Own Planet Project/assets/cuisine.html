@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cuisine</title>
+<style>
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to bottom, #002b45, #00121f);
+  color: #e0ffff;
+  margin: 0;
+  text-align: center;
+}
+
+
+header {
+  background: rgba(0, 80, 120, 0.8);
+  padding: 40px 20px;
+}
+header h1 {
+  font-size: 2.5rem;
+  color: #00c6ff;
+  text-shadow: 0 0 10px #00bfff;
+}
+header p {
+  font-size: 1.1rem;
+  color: #a8e6ff;
+}
+
+
+section {
+  padding: 40px 20px;
+}
+h2 {
+  color: #00ffff;
+  text-shadow: 0 0 8px #00ffff;
+}
+
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 30px;
+}
+.card {
+  background: rgba(0, 50, 80, 0.7);
+  border: 1px solid #00aaff;
+  border-radius: 15px;
+  width: 250px;
+  padding: 20px;
+  transition: transform 0.3s;
+}
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px #00bfff;
+}
+.card h3 {
+  color: #00e6e6;
+  margin-bottom: 10px;
+}
+.card p {
+  font-size: 0.95rem;
+  color: #c9f6ff;
+}
+
+
+footer {
+  background: #001520;
+  padding: 15px;
+  font-size: 0.9rem;
+  color: #66cfff;
+}
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Aqua Cuisine</h1>
+  <p>Famous foods of Aqualis</p>
+</header>
+
+<section>
+  <h2>About Cuisine</h2>
+  <p>
+    Delicate strands made from soft coral fibers, soaked in glowing sea-broth that shimmers with blue light.
+  </p>
+
+  <div class="card-container">
+    <div class="card">
+      <h3>Coral Noodles </h3>
+      <p>Delicate strands made from soft coral fibers, soaked in glowing sea-broth that shimmers with blue light.</p>
+    </div>
+
+    <div class="card">
+      <h3> Shell Bites</h3>
+      <p>Crispy shells filled with sea-foam cream and tiny pearls that burst with salty sweetness.</p>
+    </div>
+
+    <div class="card">
+      <h3> Kelp Rolls</h3>
+      <p>Wrapped seaweed rolls stuffed with ocean herbs and crystal spices — a favorite daily meal of divers.</p>
+    </div>
+
+    <div class="card">
+      <h3>Glow Soup</h3>
+      <p>A warm, radiant soup made from luminescent algae that glows softly in the dark — said to calm the heart and mind.</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>Made by Dhanesh — Explore the Majesty of Aqua Cuisine </p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,347 @@
+Non premitive Data Type 
+ARRAY 12 TIMES
+
+let numbers = [10, 20, 30, 40, 50];
+console.log(numbers);
+
+let fruits = ["Apple", "Banana", "Mango", "Orange"];
+console.log(fruits);
+
+let mixed = [25, "Hello", true, 45.5];
+console.log(mixed);
+
+let colors = ["Red", "Green", "Blue"];
+for (let i = 0; i < colors.length; i++) {
+  console.log(colors[i]);
+}
+
+let animals = ["Cat", "Dog"];
+animals.push("Elephant");
+console.log(animals);
+
+let students = [
+  { name: "Ravi", age: 18 },
+  { name: "Meena", age: 20 },
+];
+console.log(students);
+
+let evenNumbers = [2, 4, 6, 8, 10];
+console.log(evenNumbers);
+
+let cities = ["Chennai", "Delhi", "Mumbai", "Kolkata"];
+console.log(cities);
+
+let cars = new Array("BMW", "Audi", "Tesla");
+console.log(cars);
+
+let languages = ["HTML", "CSS", "JavaScript", "Python"];
+languages.pop();
+console.log(languages);
+
+let subjects = ["Maths", "Science", "English"];
+subjects[1] = "Biology";
+console.log(subjects);
+
+let matrix = [
+  [1, 2, 3],
+  [4, 5, 6],
+];
+console.log(matrix);
+
+NESTED OBJECT 12 TIMES
+
+let student = {
+  name: "Ravi",
+  address: { city: "Chennai", pin: 600001 }
+};
+console.log(student);
+
+let company = {
+  name: "TechCorp",
+  department: { name: "IT", employees: 25 }
+};
+console.log(company);
+
+let product = {
+  item: "Laptop",
+  price: { base: 50000, tax: 5000 }
+};
+console.log(product);
+
+let book = {
+  title: "Learn JS",
+  author: { name: "John", country: "India" }
+};
+console.log(book);
+
+let car = {
+  brand: "Tesla",
+  engine: { type: "Electric", power: "300HP" }
+};
+console.log(car);
+
+let employee = {
+  name: "Meena",
+  contact: { phone: 9876543210, email: "meena@gmail.com" }
+};
+console.log(employee);
+
+let school = {
+  name: "Sunrise School",
+  principal: { name: "Mr. Kumar", experience: 15 }
+};
+console.log(school);
+
+let movie = {
+  title: "Avatar",
+  details: { rating: 9.2, director: { name: "James Cameron" } }
+};
+console.log(movie);
+
+let university = {
+  name: "ABC University",
+  location: { city: "Delhi", state: "India" }
+};
+console.log(university);
+
+let mobile = {
+  brand: "Samsung",
+  specs: { ram: "8GB", storage: "128GB" }
+};
+console.log(mobile);
+
+let house = {
+  address: "No.10, Main Street",
+  owner: { name: "Dhanesh", age: 30 }
+};
+console.log(house);
+
+let country = {
+  name: "India",
+  capital: { name: "New Delhi", population: "2 crore" }
+};
+console.log(country);
+
+NORMAL FUNCTION DECLERATION (12TIMES)
+
+function add() {
+  console.log(5 + 3);
+}
+add();
+
+function sub() {
+  console.log(10 - 4);
+}
+sub();
+
+function mul() {
+  console.log(6 * 7);
+}
+mul();
+
+function div() {
+  console.log(20 / 5);
+}
+div();
+
+function greet() {
+  console.log("Hello Dhanesh");
+}
+greet();
+
+function square() {
+  console.log(5 * 5);
+}
+square();
+
+function cube() {
+  console.log(3 * 3 * 3);
+}
+cube();
+
+function even() {
+  console.log(8 % 2 == 0);
+}
+even();
+
+function circle() {
+  console.log(3.14 * 4 * 4);
+}
+circle();
+
+function max() {
+  console.log(12 > 15);
+}
+max();
+
+function min() {
+  console.log(12 < 15);
+}
+min();
+
+function reverse() {
+  console.log("Hello".split("").reverse().join(""));
+}
+reverse();
+
+ARROW FUNCTION DECLERATION (28 times)
+
+let add = () => console.log(5 + 3);
+add();
+
+let sub = () => console.log(10 - 4);
+sub();
+
+let mul = () => console.log(6 * 7);
+mul();
+
+let div = () => console.log(20 / 5);
+div();
+
+let greet = () => console.log("Hello Dhanesh");
+greet();
+
+let square = () => console.log(5 * 5);
+square();
+
+let cube = () => console.log(3 * 3 * 3);
+cube();
+
+let even = () => console.log(8 % 2 == 0);
+even();
+
+let circle = () => console.log(3.14 * 4 * 4);
+circle();
+
+let max = () => console.log(12 > 15);
+max();
+
+let min = () => console.log(12 < 15);
+min();
+
+let reverse = () => console.log("Hello".split("").reverse().join(""));
+reverse();
+
+let namePrint = () => console.log("My name is Dhanesh");
+namePrint();
+
+let greetMorning = () => console.log("Good Morning!");
+greetMorning();
+
+let greetNight = () => console.log("Good Night!");
+greetNight();
+
+let age = () => console.log(21);
+age();
+
+let country = () => console.log("India");
+country();
+
+let city = () => console.log("Chennai");
+city();
+
+let color = () => console.log("Blue");
+color();
+
+let fruit = () => console.log("Apple");
+fruit();
+
+let animal = () => console.log("Dog");
+animal();
+
+let car = () => console.log("Tesla");
+car();
+
+let language = () => console.log("JavaScript");
+language();
+
+let food = () => console.log("Pizza");
+food();
+
+let subject = () => console.log("Maths");
+subject();
+
+let sumNumbers = () => console.log(10 + 20 + 30);
+sumNumbers();
+
+let avg = () => console.log((10 + 20 + 30) / 3);
+avg();
+
+let power = () => console.log(2 ** 3);
+power();
+
+
+PARAMETER (14 TIMES)
+
+function add(a, b) {
+  console.log(a + b);
+}
+add(5, 3);
+
+function sub(a, b) {
+  console.log(a - b);
+}
+sub(10, 4);
+
+function mul(a, b) {
+  console.log(a * b);
+}
+mul(6, 7);
+
+function div(a, b) {
+  console.log(a / b);
+}
+div(20, 5);
+
+function greet(name) {
+  console.log("Hello " + name);
+}
+greet("Dhanesh");
+
+function square(num) {
+  console.log(num * num);
+}
+square(5);
+
+function cube(num) {
+  console.log(num * num * num);
+}
+cube(3);
+
+function isEven(num) {
+  console.log(num % 2 === 0);
+}
+isEven(8);
+
+function area(r) {
+  console.log(3.14 * r * r);
+}
+area(4);
+
+function max(a, b) {
+  console.log(a > b ? a : b);
+}
+max(12, 15);
+
+function min(a, b) {
+  console.log(a < b ? a : b);
+}
+min(12, 15);
+
+function greetCity(name, city) {
+  console.log("Hello " + name + " from " + city);
+}
+greetCity("Meena", "Chennai");
+
+function multiplyThree(a, b, c) {
+  console.log(a * b * c);
+}
+multiplyThree(2, 3, 4);
+
+function sumFour(a, b, c, d) {
+  console.log(a + b + c + d);
+}
+sumFour(1, 2, 3, 4);
+
+
+

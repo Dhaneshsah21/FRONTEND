@@ -1,0 +1,261 @@
+🟢 1. What is JavaScript and why do we use it?
+
+Explanation:
+JavaScript is a client-side scripting language used to make web pages interactive.
+It can change HTML/CSS dynamically, handle user events, and fetch data from servers.
+
+Where used:
+
+Web development (frontend + backend with Node.js)
+
+Mobile apps (React Native)
+
+Desktop apps (Electron.js)
+
+🟢 2. What are variables and why do we use let, const, and var?
+
+Explanation:
+Variables store data values.
+
+var → function-scoped (older, avoid in modern JS)
+
+let → block-scoped, can be updated
+
+const → block-scoped, cannot be reassigned
+
+Where used:
+Use const for constants, let when value will change, and avoid var in ES6+.
+
+🟢 3. What is the difference between == and === and why does it matter?
+
+Explanation:
+
+== performs type conversion before comparison.
+
+=== compares value + data type.
+Why: Prevents logical bugs caused by automatic conversions.
+Where: Always use === for strict comparisons.
+
+🟢 4. What are functions and why do we need them?
+
+Explanation:
+A function is a block of code that performs a task when called.
+Why:
+
+Reusability
+
+Modularity (break big code into smaller blocks)
+Where:
+Any repeating logic — calculations, validations, or event handling.
+
+🟢 5. What is the difference between a normal function and an arrow function?
+
+Explanation:
+
+Arrow functions have short syntax and no own this keyword.
+Why: Used in callbacks and when this from outer scope is needed.
+Where: Inside array methods, event handlers, promises, etc.
+
+🟢 6. What is the this keyword in JavaScript?
+
+Explanation:
+this refers to the object that owns the current function.
+Why important: It changes based on how a function is called.
+Where: In methods to access object properties.
+
+let user = {
+  name: "Dhanesh",
+  greet() { console.log(this.name); } // 'this' → user object
+};
+
+🟢 7. What are objects and why are they used?
+
+Explanation:
+Objects store data as key-value pairs.
+Why: Used to represent structured data.
+Where: Represent real-world entities (user, product, car).
+
+let user = { name: "John", age: 25 };
+
+🟢 8. What are arrays and where do we use them?
+
+Explanation:
+Arrays store multiple values in a single variable.
+Why: To handle lists of items like users, IDs, products.
+Where: In loops, mapping, and storing collection data.
+
+let fruits = ["apple", "banana", "orange"];
+
+🟢 9. What are callback functions and why do we use them?
+
+Explanation:
+A callback is a function passed as an argument to another function.
+Why: Used for async operations or event-based actions.
+Where: setTimeout, event handlers, API calls.
+
+setTimeout(() => console.log("Hello!"), 1000);
+
+🟢 10. What are promises and why do we use them?
+
+Explanation:
+Promises handle asynchronous code (like fetching data) in a clean way.
+Why: Avoid “callback hell”.
+Where: API calls, file reads, network requests.
+
+fetch('api/data')
+  .then(res => res.json())
+  .then(data => console.log(data));
+
+🟢 11. What is async and await and why is it used?
+
+Explanation:
+async/await is syntactic sugar for Promises — makes async code look synchronous.
+Why: Improves readability and error handling.
+Where: Inside async functions for clean async workflows.
+
+🟢 12. What are closures and why do we use them?
+
+Explanation:
+A closure allows a function to remember variables from its outer scope even after the outer function has finished.
+Why: For data privacy and function factories.
+Where: Timer counters, encapsulation, private variables.
+
+function counter() {
+  let count = 0;
+  return function() {
+    count++;
+    console.log(count);
+  }
+}
+const c = counter();
+c(); // 1
+c(); // 2
+
+🟢 13. What is hoisting and why is it important?
+
+Explanation:
+Hoisting means JS moves declarations (not initializations) to the top of scope.
+Why: Explains why you can use variables/functions before declaration.
+Where: Understanding execution order.
+
+console.log(a); // undefined
+var a = 10;
+
+🟢 14. What is an event and event handling in JavaScript?
+
+Explanation:
+Events are user actions (click, keypress, etc.).
+Event handling means responding to these actions using JS functions.
+Where: Button clicks, form submissions.
+
+button.addEventListener("click", () => console.log("Clicked!"));
+
+🟢 15. What is the difference between synchronous and asynchronous code?
+
+Explanation:
+
+Synchronous: Runs line-by-line (blocking).
+
+Asynchronous: Non-blocking; runs in background.
+Where: Async used in fetching data, animations, timers.
+
+🟢 16. What is the DOM and why do we use it?
+
+Explanation:
+DOM (Document Object Model) is a tree-like structure of HTML elements.
+Why: JS uses DOM to dynamically manipulate web pages.
+Where: Changing text, images, or styles via JS.
+
+🟢 17. What are array methods like map(), filter(), and reduce() used for?
+
+Explanation:
+
+Method	Purpose	Example
+map()	Transform elements	[1,2,3].map(x=>x*2) → [2,4,6]
+filter()	Select elements	[1,2,3].filter(x=>x>1) → [2,3]
+reduce()	Combine into single value	[1,2,3].reduce((a,b)=>a+b) → 6
+🟢 18. What is destructuring and where used?
+
+Explanation:
+Extracts values from arrays/objects easily.
+Why: Cleaner syntax.
+Where: Function parameters, API responses.
+
+let {name, age} = {name:"Dhanesh", age:22};
+
+🟢 19. What is the spread and rest operator?
+
+Explanation:
+
+Spread (...) expands arrays/objects
+
+Rest (...) collects remaining arguments
+Where: Function calls, array merging.
+
+let arr = [1,2,3];
+let newArr = [...arr, 4, 5];
+
+🟢 20. What are ES6 features and why are they important?
+
+Explanation:
+Introduced modern syntax improvements:
+
+let, const
+
+Arrow functions
+
+Template literals
+
+Destructuring
+
+Classes, modules
+Why: Makes JS more powerful, readable, modular.
+
+🟢 21. What are modules in JavaScript?
+
+Explanation:
+Modules allow splitting code into multiple files.
+Why: Increases reusability & organization.
+Where: React, Node.js, modern JS projects.
+
+// export.js
+export const name = "JS";
+// import.js
+import {name} from './export.js';
+
+🟢 22. What is the difference between shallow and deep copy?
+
+Explanation:
+
+Shallow copy: copies reference of nested objects.
+
+Deep copy: creates a full independent copy.
+Where: When duplicating objects or arrays safely.
+
+🟢 23. What are higher-order functions?
+
+Explanation:
+Functions that take other functions as arguments or return them.
+Why: Core of functional programming.
+Where: map(), filter(), reduce().
+
+🟢 24. What are template literals and why use them?
+
+Explanation:
+They allow multi-line strings and variable embedding.
+Why: Easier string formatting.
+Where: Dynamic text, console messages, HTML creation.
+
+let name = "JS";
+console.log(`Hello, ${name}!`);
+
+🟢 25. What are the main differences between ES5 and ES6?
+
+Answer:
+
+Feature	ES5	ES6
+Variable	var	let, const
+Function	normal	arrow
+String	“+” concat	template literal
+OOP	prototype	class
+Async	callbacks	promises / async-await

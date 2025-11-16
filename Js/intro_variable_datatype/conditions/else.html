@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>else</title>
+</head>
+<body>
+    <h1>THIS IS ELSE WITH IF</h1>
+    <script>
+var age = 20;
+
+if (age >= 18) {
+    console.log("You are an adult");
+} else {
+    console.log("You are a minor");
+}
+
+if (age != 25) {
+    console.log("Age is not 25");
+} else {
+    console.log("Age is exactly 25");
+}
+
+if (age > 13 && age < 19) {
+    console.log("You are a teenager");
+} else {
+    console.log("You are not a teenager");
+}
+
+if (age == 0 || age < 0) {
+    console.log("Invalid age");
+} else {
+    console.log("Valid age");
+}
+
+var temperature = 28;
+
+if (temperature > 35) {
+    console.log("It's a hot day");
+} else {
+    console.log("It's not too hot");
+}
+
+if (temperature < 20) {
+    console.log("It's cold");
+} else {
+    console.log("It's warm");
+}
+
+if (temperature % 2 == 0) {
+    console.log("Temperature is an even number");
+} else {
+    console.log("Temperature is odd");
+}
+
+if (temperature >= 25 && temperature <= 30) {
+    console.log("Pleasant weather");
+} else {
+    console.log("Uncomfortable weather");
+}
+
+var speed = 60;
+
+if (speed > 100) {
+    console.log("Overspeeding");
+} else {
+    console.log("Within safe limit");
+}
+
+if (speed++ == 60) {
+    console.log("Speed was exactly 60 before increment, now:", speed);
+} else {
+    console.log("Speed was not 60 before increment");
+}
+
+if (--speed == 60) {
+    console.log("After decrement, speed is back to 60");
+} else {
+    console.log("After decrement, speed is not 60");
+}
+
+if (speed ** 2 > 3000) {
+    console.log("Speed squared is high");
+} else {
+    console.log("Speed squared is low");
+}
+
+var price = 1200;
+
+if (price > 1000) {
+    console.log("Product is expensive");
+} else {
+    console.log("Product is affordable");
+}
+
+if (price != 0) {
+    console.log("Valid price entered");
+} else {
+    console.log("Price not entered");
+}
+
+if (price > 500 && price < 1500) {
+    console.log("Mid-range product");
+} else {
+    console.log("Out of mid-range");
+}
+
+if (price == 1000 || price == 1200) {
+    console.log("Special discount available");
+} else {
+    console.log("No discount for this price");
+}
+
+var battery = 40;
+
+if (battery & 1) {
+    console.log("Battery level is odd");
+} else {
+    console.log("Battery level is even");
+}
+
+if (battery | 2) {
+    console.log("Battery | 2 result:", battery | 2);
+} else {
+    console.log("Battery OR result invalid");
+}
+
+if (battery >> 1) {
+    console.log("Battery right shift value:", battery >> 1);
+} else {
+    console.log("Battery right shift result is 0");
+}
+
+if (battery < 20 ? true : false) {
+    console.log("Battery low warning");
+} else {
+    console.log("Battery level is fine");
+}
+
+    </script>
+</body>
+</html>

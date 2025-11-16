@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>if</title>
+</head>
+<body>
+    <h1>THIS IS IF</h1>
+    <script>
+
+var a = 10;
+if (a == 10) {
+    console.log("a equals 10");
+}
+if (a += 5) {
+    console.log("a after += 5:", a);
+}
+if (a % 2 == 0) {
+    console.log("a is even");
+}
+if (a * 2 > 15) {
+    console.log("a*2 is greater than 15");
+}
+
+var marks = 75;
+if (marks >= 90) {
+    console.log("Excellent");
+}
+if (marks != 100) {
+    console.log("Not full marks");
+}
+if (marks > 50 && marks < 80) {
+    console.log("Average range");
+}
+if (marks == 0 || marks < 35) {
+    console.log("Fail");
+}
+
+var x = 5;
+if (x++ == 5) {
+    console.log("x++ condition true, x now:", x);
+}
+if (--x == 5) {
+    console.log("--x condition true, x now:", x);
+}
+if (x != 0) {
+    console.log("x is not zero");
+}
+if (x ** 2 > 25) {
+    console.log("x squared is greater than 25");
+}
+
+var flag = true;
+var condition = false;
+if (flag == true) {
+    console.log("Flag is active");
+}
+if (!flag) {
+    console.log("Flag is inactive");
+}
+if (flag && condition) {
+    console.log("Both are true");
+}
+if (flag || condition) {
+    console.log("At least one is true");
+}
+
+var num = 7;
+if (num & 1) {
+    console.log("num is odd (bitwise AND check)");
+}
+if (num | 2) {
+    console.log("num | 2 gives:", num | 2);
+}
+if (num >> 1) {
+    console.log("Right shift of num:", num >> 1);
+}
+if (num < 10 ? true : false) {
+    console.log("num is less than 10 (ternary check)");
+}
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>reduce() - function</title>
+</head>
+<body>
+    <h2>reduce() - function (Simple Example)</h2>
+
+    <script>
+        let nums = [10, 20, 30, 40, 50];
+        const total = nums.reduce((a, b) => a + b, 0);
+        console.log(total);
+
+        let marks = [45, 55, 65, 75];
+        const totalMarks = marks.reduce((a, b) => a + b, 0);
+        console.log(totalMarks);
+
+        let prices = [100, 200, 300];
+        const totalPrice = prices.reduce((a, b) => a + b, 0);
+        console.log(totalPrice);
+
+        let scores = [5, 10, 15];
+        const totalScore = scores.reduce((a, b) => a + b, 0);
+        console.log(totalScore);
+
+        let age = [18, 22, 25, 30];
+        const totalAge = age.reduce((a, b) => a + b, 0);
+        console.log(totalAge);
+
+        let fruits = [1, 2, 3, 4];
+        const fruitCount = fruits.reduce((a, b) => a + b, 0);
+        console.log(fruitCount);
+
+        let nums1 = [2, 4, 6];
+        const multiply = nums1.reduce((a, b) => a * b, 1);
+        console.log(multiply);
+
+        let nums2 = [10, 5, 2];
+        const subtract = nums2.reduce((a, b) => a - b);
+        console.log(subtract);
+
+        let nums3 = [3, 6, 9];
+        const add = nums3.reduce((a, b) => a + b, 0);
+        console.log(add);
+
+        let nums4 = [7, 14, 21];
+        const divide = nums4.reduce((a, b) => a / b);
+        console.log(divide);
+
+        let nums5 = [2, 3, 4, 5];
+        const totalNum = nums5.reduce((a, b) => a + b, 0);
+        console.log(totalNum);
+
+        let nums6 = [5, 10, 15, 20];
+        const sum = nums6.reduce((a, b) => a + b, 0);
+        console.log(sum);
+    </script>
+</body>
+</html>

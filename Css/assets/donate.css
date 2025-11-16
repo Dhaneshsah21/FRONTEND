@@ -1,0 +1,6 @@
+.form{
+    display: flex;
+    background: black;
+    color: white;
+    justify-content: center;
+}

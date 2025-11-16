@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Party Form</title>
+</head>
+<body>
+    <center>
+        <h1>ENTER THE PARTY NIGHT</h1>
+        <img src="assets/Neon Modern Night Club Party Poster.png" alt="poster image" width="500" height="300">
+    </center>
+    <p><b>READ OUR CRAZY RULES AND REGULATIONS BEFORE ENTRY</b></p>
+    <ul>
+        <li>No entry without a smile - frowns stay at home!</li>
+        <li>Password is mandatory - only those who know the Secret Party Code may entry free.</li>
+        <li>Dancing is compulsory - even if you have two left feet.</li>
+        <li>Unlimited Pizza Policy - eat as much as you want, but share with the DJ.</li>
+        <li>Glow sticks = VIP pass - the more glow, the more power.</li>
+        <li>Selfies allowed - but memes must be uploaded within 24 hours.</li>
+        <li>Confetti fights - winner gets extra cake.</li>
+        <li>No boring talk - only jokes, memes, and fun stories allowed.</li>
+        <li>Energy level must stay above 7 - if you're sleepy, coffee shots are waiting.</li>
+        <li>Exit dance mandatory - you can't leave until you show your craziest move.</li>
+    </ul>
+    <center>
+        <form action="night party.html" method="get">
+            <label>Party NickName:</label>
+            <input type="text" placeholder="Dj Cool,Meme King...">
+            <br><br>
+            <label>Secret Party Code</label>
+            <input type="password" name="password" required>
+            <br><br>
+            <label>Where we send your hangover recovery tips:</label>
+            <input type="email" placeholder="example@party.com">
+            <br><br>
+            <label>How many pizzas can you eat tonight?</label>
+            <input type="number" name="pizza_count" min="0" max="50">
+            <br><br>
+            <label>Choose Your Vibe:</label><br>
+            <input type="radio" name="vibe" value="dancer">Dancer <br>
+            <input type="radio" name="vibe" value="singer">Singer <br> 
+            <input type="radio" name="vibe" value="gamer">Gamer <br> 
+            <input type="radio" name="vibe" value="silent observer">Silent Observer
+            <br><br>
+            <label>Party Weapons:</label><br>
+            <input type="checkbox" name="Weapon" value="glowsticks">glowsticks <br>
+            <input type="checkbox" name="Weapon" value="balloons">balloons <br>
+            <input type="checkbox" name="Weapon" value="Confetti">Confetti <br>
+            <input type="checkbox" name="Weapon" value="Memeprojector">Memeprojector 
+            <br><br>
+            <label>Pick Your Party Outfit Color</label>
+            <input type="color" name="Outfit_color">
+            <br><br>
+            <label>Energy Level</label>
+            <input type="range" name="Energy" min="0" max="10">(0 = Sleepy,10 = Party hard)
+            <br><br>
+            <label>When will you arrive to crash the party?</label>
+            <input type="time" name="arrival_time">
+            <br><br>
+            <label>Favorite Party Month</label>
+            <input type="month" name="fav_month">
+            <br><br>
+            <label>Best Party Week of the Year</label>
+            <input type="week" name="party_week">
+            <br><br>
+            <label>Link to Your Party Playlist (Spotify/YouTube)</label>
+            <input type="url" name="Playlist" placeholder="https:/">
+            <br><br>
+            <label>Upload Your Crazy Dance Video or Party Selfie</label>
+            <input type="file" name="party_file"> 
+            <br><br>
+            <label>Search for your lost party hat</label>
+            <input type="search" name="party_hat">
+            <br><br>
+            <label>Emergency Call Number (for Pizza Delivery Only)</label>
+            <input type="tel" name="phone" placeholder="+91-9876543210">
+            <br><br>
+            <label>What's the craziest thing you'll do at this party?</label>
+            <textarea name="crazy_things" rows="4" cols="40"></textarea>
+            <br><br>
+            <input type="submit" value="Lets party">
+            <br><br>
+            <input type="reset" value="reset">
+        </form>
+    </center>
+</body>
+</html>

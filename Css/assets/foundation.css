@@ -1,0 +1,46 @@
+.navbar1{
+    display: flex;
+    box-sizing: border-box;
+    background-color: black;
+    justify-content: space-between;
+}
+.logo{
+    display: flex;
+    margin: 10px;
+    padding: 10px;
+    color: white;
+    
+    
+}
+.logo img{
+    width: 60px;
+    height: 60px;
+}
+.search{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.search ser{
+    border: none;
+    background-color: rgba(126, 148, 148, 0.11);
+    color: bisque;
+}
+.nav1{
+    display: flex;
+     margin: 10px;
+    padding: 10px;   
+}
+.nav1 a{
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    padding: 20px;
+    color: white;
+
+}
+.banner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

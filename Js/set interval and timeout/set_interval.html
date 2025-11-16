@@ -1,0 +1,75 @@
+<h2>setInterval() - Daily Routine Reminder</h2>
+
+<script>
+    // Count from 1 to 5
+    let count = 0;
+    const counter = setInterval(() => {
+        count++;
+        console.log(`Task ${count} started...`);
+        if(count === 5){
+            clearInterval(counter);
+            console.log("All tasks completed for the day!");
+        }
+    }, 2000);
+
+    // Morning routine
+    const morning = setInterval(() => {
+        console.log(" Good Morning! Time to wake up.");
+    }, 1000);
+
+    // Breakfast reminder
+    const breakfast = setInterval(() => {
+        console.log(" Don't forget your breakfast!");
+    }, 3000);
+
+    // Study reminder
+    const study = setInterval(() => {
+        console.log("Study time — focus for 1 hour.");
+    }, 4000);
+
+    // Lunch reminder
+    const lunch = setInterval(() => {
+        console.log(" Lunch time! Take a short break.");
+    }, 5000);
+
+    // Exercise reminder
+    const exercise = setInterval(() => {
+        console.log(" Do 15 minutes of exercise.");
+    }, 6000);
+
+    // Water reminder
+    const water = setInterval(() => {
+        console.log(" Drink some water.");
+    }, 2500);
+
+    // Evening reminder
+    const evening = setInterval(() => {
+        console.log(" Go for an evening walk.");
+    }, 7000);
+
+    // Dinner reminder
+    const dinner = setInterval(() => {
+        console.log(" Dinner time — eat something healthy.");
+    }, 8000);
+
+    // Sleep reminder
+    const sleep = setInterval(() => {
+        console.log(" Time to sleep. Good night!");
+    }, 9000);
+    
+    const oneWeek = 7 * 24 * 60 * 60 * 1000; // 7 days
+
+    setTimeout(() => {
+        clearInterval(morning);
+        clearInterval(breakfast);
+        clearInterval(study);
+        clearInterval(lunch);
+        clearInterval(exercise);
+        clearInterval(water);
+        clearInterval(evening);
+        clearInterval(dinner);
+        clearInterval(sleep);
+
+        console.log("All reminders stopped after one week!");
+    }, oneWeek);
+</script>

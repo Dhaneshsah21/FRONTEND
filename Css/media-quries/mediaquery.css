@@ -1,0 +1,62 @@
+body{
+    background-color: black;
+}
+
+.box{
+    background-color: grey;
+    color: white;
+    padding: 20px;
+    width: 200px;
+    height: 200px;
+}
+
+
+.parent{
+    display: flex;
+    justify-content: space-around;
+}
+
+
+@media (max-width:1600px) {
+
+   .box{
+    background-color: rgb(221, 116, 98);
+   }
+    
+}
+@media (max-width:1200px) {
+
+   .box{
+    background-color: black;
+    display: none;
+   }
+    
+}
+
+@media (max-width:1024px) {
+
+   .box{
+    display: flex;
+    background-color: aquamarine;
+   }
+    
+}
+
+
+@media (max-width:768px) {
+
+   .box{
+    background-color: black;
+    display: none;
+   }
+    
+}
+
+@media (max-width:600px) {
+
+   .box{
+    display: flex;
+    background-color:blueviolet;
+   }
+    
+}

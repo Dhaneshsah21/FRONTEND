@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>filter() - Product Example</title>
+</head>
+<body>
+    <h2>filter() - Product Example</h2>
+
+    <script>
+        const products = [120, 250, 80, 500, 60, 900, 150, "Tea", "Coffee", "Juice", "Cake", "Biscuit", "IceCream", 700, 300];
+
+        const arr1 = products.filter((item) => item > 100);
+        console.log(arr1); 
+
+        const arr2 = products.filter((item) => item < 100);
+        console.log(arr2); 
+
+        const arr3 = products.filter((item) => typeof item === "string");
+        console.log(arr3); 
+
+        const arr4 = products.filter((item) => typeof item === "number");
+        console.log(arr4);
+
+        const arr5 = products.filter((item) => item > 500);
+        console.log(arr5); 
+
+        const arr6 = products.filter((item) => item < 200);
+        console.log(arr6); 
+
+        const arr7 = products.filter((item) => item === "Coffee");
+        console.log(arr7);
+
+        const arr8 = products.filter((item) => item === "Juice");
+        console.log(arr8);
+
+        const arr9 = products.filter((item) => item > 300);
+        console.log(arr9);
+
+        const arr10 = products.filter((item) => item < 80);
+        console.log(arr10);
+
+        const arr11 = products.filter((item) => item === "Cake");
+        console.log(arr11); 
+
+        const arr12 = products.filter((item) => item >= 100 && item <= 400);
+        console.log(arr12); 
+    </script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.navbar{
+    display: flex;
+    box-sizing: border-box;
+    background-color: black;
+    justify-content: space-between;
+}
+.logo{
+    display: flex;
+    margin: 10px;
+    padding: 20px;
+    color: white;
+    
+    
+}
+.nav{
+    display: flex;
+     margin: 10px;
+    padding: 0px;   
+}
+.nav a{
+    display: flex;
+    text-decoration: none;
+    padding: 20px;
+    color: white;
+
+}
+.parent-box{
+    display: flex;
+    height: 300px;
+    align-items: center;
+    background-color: lightgrey;
+    justify-content: center;
+}
+.box{
+    display: flex;
+    background: darkblue;
+    color: white;
+    padding: 40px;
+    height: 120px;
+    width: 120px;
+    justify-content: center;
+    align-items: center;
+
+}

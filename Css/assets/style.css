@@ -1,0 +1,37 @@
+.box{
+    margin: 20px;
+    border:10px solid purple;
+    padding: 50px;
+    text-align: center;
+    color: white;
+    background: black;
+    width: 200;
+    height: 200;
+}
+.image{
+    margin: 20px;
+    border: 10px solid black;
+    padding: 50px;
+    text-align: center;
+    background: beige;
+    width: 400;
+    height: 200;
+}
+.link{
+    margin: 20px;
+    border: 10px solid red;
+    padding: 50px;
+    text-align: center;
+    width: 200;
+    height: 200;
+    background: lightblue;
+}
+.video{
+    margin: 20px;
+    border: 10px solid gold;
+    padding: 50px;
+    text-align: center;
+    background: gray;
+    width: 300;
+    height: 400;
+}

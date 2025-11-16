@@ -1,0 +1,36 @@
+body{
+    display: flex;
+    flex-direction: column;
+    background-color: bisque;
+    color: black;
+    align-items: center;
+}
+h1::before { content: "🎨 "; }
+h1::after { content: " 💻"; }
+.but{
+    display: flex;
+    justify-content: space-around;
+    gap: 40px;
+}
+.button1{
+    display: flex;
+    background-color: rgb(131, 65, 193);
+    color: white;
+        border-radius: 10px;
+        padding: 10px;
+}
+.button1:hover{
+    background-color: red;
+    transform: scale(1.2);
+}
+.button2{
+    display: flex;
+    background-color: rgb(131, 65, 193);
+    color: white;
+        border-radius: 10px;
+        padding: 10px;
+}
+.button2:active{
+    background-color: rgb(18, 18, 164);
+    transform: scale(1.2);
+}
