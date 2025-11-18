@@ -5,6 +5,9 @@
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
 }
+body {
+    background-color: #4facfe; 
+}
 .logoimg{
     display: flex;
     height: 100px;
@@ -44,9 +47,7 @@
 .tourism,
 .place,
 .cinemas,
-.lovemovies,
-.actionmovie,
-.mostwatch,
+.movies,
 .traditional {
     margin: 50px;
     background: white;
@@ -62,9 +63,7 @@
 .tourism h2,
 .place h2,
 .cinemas h2,
-.lovemovies h2,
-.actionmovie h2,
-.mostwatch h2,
+.movies h2,
 .traditional h2 {
     padding: 10px 0;
     color: #222;
@@ -77,7 +76,7 @@ p {
     padding: 20px 0;
     text-align: justify;
     line-height: 1.6;
-    color: #444;
+    color: #1b1a1a;
 }
 
 ul {
@@ -101,7 +100,7 @@ ul li:hover {
 
 
 .kerala {
-    background-color: rgba(30, 102, 30, 0.65);
+    background-color: rgba(14, 129, 14, 0.65);
 }
 
 

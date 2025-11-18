@@ -1,4 +1,6 @@
-import "../assets/css/style.css"
+import "../App.css"
+import ItImg from "../assets/images/1.jpg";
+import Robatics from "../assets/images/2.jpg";
 const Chennai = ()=> {
     return(
         <>
@@ -33,6 +35,7 @@ export const Itcompanies =()=>{
         <>
         <div className="itcompany">
             <div>
+                <img src={ItImg} alt="" />
                 <h1>IT COMPANIES IN CHENNAI</h1>
             </div>
             <div>
@@ -49,6 +52,7 @@ export const Robotics = ()=>{
     return(
         <>
         <div className="robotics">
+            <img src={Robatics} alt="" />
             <h2>THIS IS ROBOTICS</h2>
             <p>Chennai is becoming a growing hub for robotics, with companies and startups working on automation and smart machines. Areas like OMR and Guindy have robotics firms that build industrial and service robots for factories and hospitals. Colleges such as IIT Madras also support robotics research and training. With increasing demand for automation, Chennai offers good opportunities for students and engineers interested in robotics.</p>
         </div>
