@@ -1,0 +1,57 @@
+WHAT IS SQL?
+
+SQL, which stands for Structured Query Language, is a programming language designed to manage and 
+interact with databases. Databases store large amounts of information, and SQL helps us organize 
+that data into tables, retrieve it when needed, modify it, and remove unnecessary records. It is 
+the standard language used in almost all relational databases, making it extremely important in the 
+world of data and software development.
+
+WHY WE USE SQL ?
+
+We use SQL because it provides a simple and powerful way to manage data. When businesses handle 
+thousands or millions of records—such as customer details, employee information, product lists, or 
+transactions—SQL helps them handle all this easily. It allows us to search for specific data, 
+update information, insert new records, and delete old ones. With just a few lines of SQL, we can 
+perform tasks that would otherwise be very complicated. This makes SQL essential for building 
+reliable, efficient, and secure systems.
+
+WHERE WE USE SQL ?
+
+SQL is used across almost every industry and technology platform. Websites like Amazon, Instagram, 
+and YouTube use SQL databases to store user profiles, posts, orders, and activity. Mobile apps such 
+as Swiggy and Ola depend on SQL to manage ride details, order history, and user accounts. In 
+backend development, languages like Node.js, Python, Java, PHP, and .NET all connect to SQL 
+databases to store and retrieve data. Beyond tech companies, SQL is also used in banking, finance, 
+data analytics, and business intelligence. Wherever large amounts of data need to be managed 
+quickly and safely, SQL is the key tool.
+
+SQL COMMANDS 
+
+DDL 
+
+DDL commands are used to define or modify the structure of the database. These commands create, 
+delete, or change tables and the database itself. They do not work with the actual data inside the 
+tables but work with the structure. When you use DDL commands, the changes happen permanently in 
+the database. 
+
+DML
+
+DML commands are used to insert, update, delete, or modify data inside the tables. These commands 
+work directly with the data. DML commands do not change the table structure—they only affect the 
+records.
+
+DQL 
+
+DQL is used to retrieve or fetch data from the database. It focuses only on getting data, not 
+modifying it. DQL is mainly used in applications and reporting systems where data needs to be 
+displayed to users.
+
+DCL 
+
+DCL commands are used to control access to the database. They provide security by allowing or 
+restricting user permissions such as reading or modifying data.
+
+TCL
+
+TCL commands help manage transactions in the database. A transaction is a group of operations that 
+must be executed completely or not at all. These commands ensure data safety and accuracy.
